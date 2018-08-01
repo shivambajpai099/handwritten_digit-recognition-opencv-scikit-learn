@@ -29,10 +29,9 @@ hog_features = pp.transform(hog_features)
 
 print "Count of digits in dataset", Counter(labels)
 
-# Create an linear SVM object
+
 clf = LinearSVC()
 
-# Perform the training
 clf.fit(hog_features, labels)
 
 # Save the classifier
